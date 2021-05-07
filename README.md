@@ -13,7 +13,7 @@ Zupa is a simple web scraper which uses Beautiful Soup to traverse child links o
 `PY.AbstractURL` can be extended to traverse other root URLs. For example:
 1. Create a new class `PY.WikiBachURL` which extends `PY.AbstractURL`
 2. Override the `ROOTURL` parameter to be `https://en.wikipedia.org/wiki/Johann_Sebastian_Bach`
-3. Optionally override any of the other parameters defined in `PY.AbstractURL`. Please read an understand the terms of use of URLs you will traverse before setting `STOREURLCONTENT` to `1`, as this setting determines whether Beatiful Soup will be pickled and stored in the database
+3. Optionally override any of the other parameters defined in `PY.AbstractURL`. Please read an understand the terms of use of URLs you will traverse before setting `STOREURLCONTENT` to `1`, as this setting determines whether Beatiful Soup will be pickled and stored in the database. Parameters can be used to limit to rate that the tool will iterate through URLs.
 4. Override `GetURLList()` to determine how child links are selected and stored. This method should return a Python list of URLs.
 
 
