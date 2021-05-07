@@ -3,6 +3,8 @@ A demonstration of [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/l
 
 Zupa is a simple web scraper which uses Beautiful Soup to traverse child links of a root URL using breadth first search. The InterSytems IRIS object database is used to persist link data and serves as a queue used by the traversal algorithm. Optionally, Pickle can be used to serialize the Beautiful Soup object for storage. **Important:** please read and abide by any relevant terms of use before storing Beautiful Soup data. Finally, a small NetworkX wrapper class can visualize the graph of URLs and their children.
 
+Docs100.pdf and Docs10000.pdf are examples of NetworkX graphs generated from 100 and 10,000 nodes of URLs. 
+
 ## Install
 1. Clone the repo
 2. Load the files into IRIS
